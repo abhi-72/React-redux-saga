@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
-import { getUserDetail } from './store/actions';
+import { getUserDetail } from '../store/actions';
 
 class UserDetail extends Component {
 

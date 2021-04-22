@@ -1,8 +1,8 @@
 
 import { React, Fragment } from "react";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import User from "../User";
-import UserDetail from "../UserDetail";
+import User from "../components/User";
+import UserDetail from "../components/UserDetail";
 
 const Routes = () => {
     return (

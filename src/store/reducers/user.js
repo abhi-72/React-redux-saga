@@ -1,7 +1,8 @@
 import { types } from "../constants";
 
 const initialState = {
-    user: undefined
+    user: undefined,
+    userDetails: undefined
 };
 
 export const user = (state = initialState, action) => {
@@ -12,6 +13,13 @@ export const user = (state = initialState, action) => {
             return {
                 ...state,
                 user: action.payload
+            }
+        case types.GET_USER_DETAIL:
+            return { ...state }
+        case types.GET_USER_DETAIL_SUCCESS:
+            return {
+                ...state,
+                userDetails: action.payload
             }
         default:
             return state;
